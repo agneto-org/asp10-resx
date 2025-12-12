@@ -1,0 +1,31 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "MultiLangApp/1.0.0": {
+        "runtime": {
+          "MultiLangApp.dll": {}
+        },
+        "resources": {
+          "en/MultiLangApp.resources.dll": {
+            "locale": "en"
+          },
+          "es/MultiLangApp.resources.dll": {
+            "locale": "es"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MultiLangApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

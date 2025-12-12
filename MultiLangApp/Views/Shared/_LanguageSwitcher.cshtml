@@ -1,0 +1,16 @@
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<MultiLangApp.SharedResource> Localizer
+
+@{
+    var requestCulture = Context.Features.Get<IRequestCultureFeature>();
+    var currentCulture = requestCulture?.RequestCulture.UICulture.Name ?? "en";
+}
+
+<form asp-controller="Home" asp-action="SetLanguage" method="post" class="d-flex align-items-center">
+    <input type="hidden" name="returnUrl" value="@Context.Request.Path" />
+    <select name="culture" class="form-select form-select-sm" onchange="this.form.submit()" style="width: auto;">
+        <option value="en" selected="@(currentCulture == "en")">@Localizer["English"]</option>
+        <option value="es" selected="@(currentCulture == "es")">@Localizer["Spanish"]</option>
+    </select>
+</form>

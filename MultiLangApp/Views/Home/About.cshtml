@@ -1,0 +1,18 @@
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<MultiLangApp.SharedResource> Localizer
+@{
+    ViewData["Title"] = Localizer["About"];
+}
+
+<div class="text-center">
+    <h1 class="display-4">@Localizer["AboutTitle"]</h1>
+    <p class="lead">@Localizer["AboutDescription"]</p>
+    <hr />
+    <div class="card mt-4">
+        <div class="card-body">
+            <h5 class="card-title">ASP.NET Core 10</h5>
+            <p class="card-text">@Localizer["HomeDescription"]</p>
+            <a asp-action="Index" class="btn btn-primary">@Localizer["Home"] &raquo;</a>
+        </div>
+    </div>
+</div>

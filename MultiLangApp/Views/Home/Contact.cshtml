@@ -1,0 +1,40 @@
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<MultiLangApp.SharedResource> Localizer
+@{
+    ViewData["Title"] = Localizer["Contact"];
+}
+
+<div class="text-center">
+    <h1 class="display-4">@Localizer["ContactTitle"]</h1>
+    <p class="lead">@Localizer["ContactDescription"]</p>
+    <hr />
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">@Localizer["Email"]</h5>
+                    <p class="card-text">contact@example.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">@Localizer["Phone"]</h5>
+                    <p class="card-text">+1 (555) 123-4567</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">@Localizer["Address"]</h5>
+                    <p class="card-text">123 Main Street, City</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4">
+        <a asp-action="Index" class="btn btn-primary">@Localizer["Home"] &raquo;</a>
+    </div>
+</div>

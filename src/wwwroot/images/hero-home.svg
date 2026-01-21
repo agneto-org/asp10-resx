@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="url(#bgGradient)" rx="10"/>
+  <circle cx="100" cy="100" r="50" fill="rgba(255,255,255,0.2)"/>
+  <circle cx="320" cy="60" r="30" fill="rgba(255,255,255,0.15)"/>
+  <circle cx="280" cy="160" r="40" fill="rgba(255,255,255,0.1)"/>
+  <text x="200" y="90" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="bold">Multi-Language</text>
+  <text x="200" y="120" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18">ASP.NET Core App</text>
+</svg>

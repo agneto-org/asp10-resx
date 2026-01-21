@@ -49,3 +49,6 @@ app.MapControllerRoute(
     .WithStaticAssets();
 
 app.Run();
+
+// Partial class for WebApplicationFactory support in tests
+public partial class Program { }

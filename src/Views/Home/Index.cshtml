@@ -5,7 +5,12 @@
     ViewData["Title"] = Localizer["Home"];
 }
 
-<div class="text-center">
+<div class="hero-section">
+    <img src="~/images/hero-home.svg" alt="Multi-Language App" class="hero-image" />
+    <div class="language-badge mb-3">
+        <img src="~/images/globe-icon.svg" alt="Globe" class="globe-icon" />
+        <span>@Localizer["SelectLanguage"]</span>
+    </div>
     <h1 class="display-4">@Localizer["Welcome"]</h1>
     <p class="lead">@Localizer["WelcomeMessage"]</p>
     <p>@Localizer["HomeDescription"]</p>
